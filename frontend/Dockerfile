@@ -1,4 +1,4 @@
-# Railway-optimized Dockerfile for Rwanda Service Marketplace Frontend
+# Simple Dockerfile for Railway deployment
 
 FROM node:18-alpine
 
