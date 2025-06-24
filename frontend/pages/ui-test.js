@@ -1,8 +1,8 @@
 import Layout from '../components/Layout/Layout'
-import { 
+import {
   DevicePhoneMobileIcon,
   ComputerDesktopIcon,
-  TabletIcon,
+  DeviceTabletIcon,
   CheckCircleIcon
 } from '@heroicons/react/24/outline'
 
@@ -15,7 +15,7 @@ export default function UITest() {
       breakpoint: '< 640px'
     },
     {
-      icon: TabletIcon,
+      icon: DeviceTabletIcon,
       title: 'Tablet Ready',
       description: 'Perfect layout for tablets and medium screens',
       breakpoint: '640px - 1024px'

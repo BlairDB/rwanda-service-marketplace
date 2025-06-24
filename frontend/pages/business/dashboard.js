@@ -20,7 +20,7 @@ import {
   ArrowRightOnRectangleIcon,
   CheckCircleIcon,
   ExclamationCircleIcon,
-  TrendingUpIcon,
+  ArrowUpIcon,
   CalendarIcon,
   PhotoIcon,
   ClockIcon,
@@ -210,7 +210,7 @@ export default function BusinessDashboard() {
             <nav className="flex space-x-8">
               {[
                 { id: 'overview', name: 'Overview', icon: ChartBarIcon },
-                { id: 'analytics', name: 'Analytics', icon: TrendingUpIcon },
+                { id: 'analytics', name: 'Analytics', icon: ArrowUpIcon },
                 { id: 'services', name: 'Services', icon: WrenchScrewdriverIcon },
                 { id: 'images', name: 'Images', icon: PhotoIcon },
                 { id: 'hours', name: 'Hours', icon: ClockIcon },
@@ -281,7 +281,7 @@ export default function BusinessDashboard() {
                 <div className="bg-white rounded-2xl shadow-lg p-6">
                   <div className="flex items-center">
                     <div className="p-3 bg-purple-100 rounded-lg">
-                      <TrendingUpIcon className="h-6 w-6 text-purple-600" />
+                      <ArrowUpIcon className="h-6 w-6 text-purple-600" />
                     </div>
                     <div className="ml-4">
                       <p className="text-sm font-medium text-gray-500">Monthly Growth</p>

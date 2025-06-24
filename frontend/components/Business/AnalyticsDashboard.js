@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react'
-import { 
+import {
   EyeIcon,
   PhoneIcon,
   EnvelopeIcon,
   GlobeAltIcon,
-  TrendingUpIcon,
-  TrendingDownIcon,
+  ArrowUpIcon,
+  ArrowDownIcon,
   ChartBarIcon,
   CalendarIcon
 } from '@heroicons/react/24/outline'
@@ -71,9 +71,9 @@ export default function AnalyticsDashboard({ businessId }) {
 
   const getGrowthIcon = (growth) => {
     if (growth > 0) {
-      return <TrendingUpIcon className="h-4 w-4 text-green-500" />
+      return <ArrowUpIcon className="h-4 w-4 text-green-500" />
     } else if (growth < 0) {
-      return <TrendingDownIcon className="h-4 w-4 text-red-500" />
+      return <ArrowDownIcon className="h-4 w-4 text-red-500" />
     }
     return <ChartBarIcon className="h-4 w-4 text-gray-400" />
   }
