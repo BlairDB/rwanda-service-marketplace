@@ -1,0 +1,22 @@
+[build]
+builder = "NIXPACKS"
+
+[deploy]
+healthcheckPath = "/api/v1/health"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
+
+[services.backend]
+source = "backend/"
+
+[services.backend.variables]
+NODE_ENV = "production"
+PORT = "$PORT"
+
+[services.frontend]
+source = "frontend/"
+
+[services.frontend.variables]
+NODE_ENV = "production"
+PORT = "$PORT"
+NEXT_PUBLIC_API_URL = "${{backend.RAILWAY_PUBLIC_DOMAIN}}"

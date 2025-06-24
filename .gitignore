@@ -1,0 +1,316 @@
+# Rwanda Service Marketplace - Git Ignore File
+
+# =============================================================================
+# ENVIRONMENT & SECRETS
+# =============================================================================
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.railway
+.env.production
+
+# Secrets and keys
+*.key
+*.pem
+*.p12
+secrets/
+config/secrets.json
+
+# =============================================================================
+# NODE.JS & NPM
+# =============================================================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# =============================================================================
+# NEXT.JS
+# =============================================================================
+
+# Next.js build output
+.next/
+out/
+
+# Next.js cache
+.next/cache/
+
+# =============================================================================
+# REACT NATIVE & EXPO
+# =============================================================================
+
+# Expo
+.expo/
+.expo-shared/
+
+# React Native
+*.jks
+*.p8
+*.p12
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Metro
+.metro-health-check*
+
+# =============================================================================
+# DATABASES
+# =============================================================================
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# PostgreSQL
+*.sql.backup
+
+# Database dumps
+*.dump
+*.sql.gz
+
+# =============================================================================
+# LOGS
+# =============================================================================
+
+# Log files
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime logs
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# =============================================================================
+# UPLOADS & MEDIA
+# =============================================================================
+
+# User uploads
+uploads/
+public/uploads/
+static/uploads/
+
+# Temporary files
+tmp/
+temp/
+
+# Image processing cache
+.image-cache/
+
+# =============================================================================
+# DEVELOPMENT TOOLS
+# =============================================================================
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =============================================================================
+# DOCKER
+# =============================================================================
+
+# Docker volumes
+docker-data/
+postgres-data/
+redis-data/
+
+# =============================================================================
+# TESTING
+# =============================================================================
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Jest
+jest-coverage/
+
+# =============================================================================
+# BUILD & DISTRIBUTION
+# =============================================================================
+
+# Build directories
+build/
+dist/
+public/build/
+
+# Webpack
+.webpack/
+
+# Parcel
+.cache/
+.parcel-cache/
+
+# =============================================================================
+# DEPLOYMENT
+# =============================================================================
+
+# Deployment artifacts
+deploy/
+deployment-temp/
+
+# Railway
+.railway/
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify/
+
+# =============================================================================
+# MONITORING & ANALYTICS
+# =============================================================================
+
+# Sentry
+.sentryclirc
+
+# =============================================================================
+# BACKUP FILES
+# =============================================================================
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# =============================================================================
+# DOCUMENTATION
+# =============================================================================
+
+# Generated documentation
+docs/build/
+docs/dist/
+
+# =============================================================================
+# MISCELLANEOUS
+# =============================================================================
+
+# Lock files (keep package-lock.json but ignore others)
+yarn.lock
+pnpm-lock.yaml
+
+# Cache directories
+.cache/
+.tmp/
+
+# Runtime configuration
+.runtime/
+
+# Local configuration overrides
+local.json
+local.js
+
+# =============================================================================
+# SECURITY
+# =============================================================================
+
+# Security scan results
+security-report.json
+audit-report.json
+
+# SSL certificates (except examples)
+*.crt
+*.cert
+!example.crt
+
+# =============================================================================
+# PERFORMANCE
+# =============================================================================
+
+# Performance monitoring
+.clinic/
+profile-*
+
+# Bundle analyzer
+bundle-analyzer-report.html
+
+# =============================================================================
+# CUSTOM PROJECT FILES
+# =============================================================================
+
+# Custom ignore patterns for this project
+# Add any project-specific files or directories here
+
+# Development notes
+NOTES.md
+TODO.md
+SCRATCH.md
